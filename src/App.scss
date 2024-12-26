@@ -1,0 +1,28 @@
+@import './assets//fonts/font-styles.css';
+
+* {
+  box-sizing: border-box;
+  font-family: 'EuroStyle';
+  margin: 0;
+  padding: 0;
+}
+
+@media screen and (max-device-width: 950px) {
+  body {
+    -webkit-text-size-adjust: none;
+  }
+}
+
+html,
+body {
+  -webkit-text-size-adjust: none;
+  height: 100%;
+
+}
+
+.app-main {
+  display: flex;
+  overflow-x: hidden;
+  justify-content: center;
+  align-items: center;
+}

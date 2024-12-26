@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'EuroStyle';
+    src: url('./EuroStyleNormal.eot');
+    src: url('./EuroStyleNormal.eot?#iefix') format('embedded-opentype'),
+        url('./EuroStyleNormal.woff2') format('woff2'),
+        url('./EuroStyleNormal.woff') format('woff'),
+        url('./EuroStyleNormal.ttf') format('truetype'),
+        url('./EuroStyleNormal.svg#EuroStyleNormal') format('svg');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
