@@ -12,12 +12,6 @@ import Card from 'assets/imgs/thank-you/Group39.png';
 import Start from 'assets/imgs/thank-you/star-icon.png';
 import Vector from 'assets/imgs/thank-you/image47.png';
 
-// const Logo = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/ultraviolette-full-logo.png';
-// const BGImg = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/thank-you/Frame954.png';
-// const Card = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/thank-you/Group39.png';
-// const Start = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/thank-you/star-icon.png';
-// const Vector = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/thank-you/image47.png';
-
 
 export default function ThankYouComp() {
     const [hiddenLayer, setHiddenLayer] = useState(false);

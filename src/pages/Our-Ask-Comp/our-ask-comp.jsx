@@ -10,8 +10,6 @@ import AskCard from "./card-comp/ask-card";
 //imgs
 import F77Img from 'assets/imgs/home-comp/f77-img.png';
 import Frame from 'assets/imgs/our-ask/Frame953.png';
-// const F77Img = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/home-comp/f77-img.png';
-// const Frame = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/our-ask/Frame953.png';
 
 export default function OurAskComp() {
 

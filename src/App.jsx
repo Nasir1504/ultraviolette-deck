@@ -8,6 +8,17 @@ import { NAVIGATING_BAR_DATA } from "./pages/Nevigating-Bars/NevigatingBarData";
 
 //components
 import WelcomeComp from "./pages/Welcome-Comp/welcome-comp";
+import ProblemComp from "pages/Problem-Comp/problem-comp";
+import SolutionComp from "pages/Solution-Comp/solution-comp";
+// import USPComp from "pages/USP-Comp/usp-comp";
+import AppFlowComp from "pages/App-Flow-Comp/app-flow-comp";
+import GTMComp from "pages/GTM-Comp/gtm-comp";
+import MarketScopeComp from "pages/Market-Scope-Comp/market-scope-comp";
+import MarketingComp from "pages/Marketing-Comp/marketing-comp";
+import BusinessModelComp from "pages/Business-Model-Comp/business-model-comp";
+import RoadMapComp from "pages/Road-Map-comp/road-map-comp";
+import OurAskComp from "pages/Our-Ask-Comp/our-ask-comp";
+import ThankYouComp from "pages/Thank-You-Comp/thank-you-comp";
 
 // --------------------------
 import NavigatingBar from "./pages/Nevigating-Bars/navigating-bar";
@@ -140,29 +151,60 @@ function App() {
 
       {/* ---------------------------------------- */}
       <div className="app-left-btn-nav"
-          onClick={handleLeftClick}
+        onClick={handleLeftClick}
+      >
+        <ArrowBackIosIcon
+          className="arrow-icon"
+          style={{
+            color: "#ffffff"
+          }}
+        />
+        <p>BACK</p>
+      </div>
+
+      <div className="app-right-btn-nav"
+        onClick={handleRightClick}
+      >
+        <p>NEXT</p>
+        <ArrowForwardIosIcon
+          className="arrow-icon"
+          style={{
+            color: "#ffffff"
+          }}
+        />
+
+      </div>
+
+      {/* ---------------------------------------- */}
+      <div className="full-screen-btn"
+          style={{
+            display: !isScreenSmall && 'none'
+          }}
         >
-          <ArrowBackIosIcon
-            className="arrow-icon"
-            style={{
-              color: "#ffffff"
-            }}
+          <FullScreenBtn
+            IsScreenSmall={isScreenSmall}
+            SetIsScreenSmall={setIsScreenSmall}
           />
-          <p>BACK</p>
         </div>
 
-        <div className="app-right-btn-nav"
-          onClick={handleRightClick}
-        >
-          <p>NEXT</p>
-          <ArrowForwardIosIcon
-            className="arrow-icon"
-            style={{
-              color: "#ffffff"
-            }}
-          />
+      {/* ---------------------------------------- */}
+      <div style={{ minWidth: "100%" }} ref={ref1}><WelcomeComp /></div>
+      <div style={{ minWidth: "100%" }} ref={ref2}><ProblemComp /></div>
+        <div style={{ minWidth: "100%" }} ref={ref3}><SolutionComp /></div>
+        {/* <div style={{ minWidth: "100%" }} ref={ref4}><USPComp /></div> */}
 
-        </div>
+        <div style={{ minWidth: "100%" }} ref={ref5}><AppFlowComp /></div>
+        <div style={{ minWidth: "100%" }} ref={ref6}><GTMComp /></div>
+        <div style={{ minWidth: "100%" }} ref={ref7}><MarketScopeComp /></div>
+
+        <div style={{ minWidth: "100%" }} ref={ref8}><MarketingComp /></div>
+        <div style={{ minWidth: "100%" }} ref={ref9}><BusinessModelComp /></div>
+
+        <div style={{ minWidth: "100%" }} ref={ref10}><RoadMapComp /></div>
+        <div style={{ minWidth: "100%" }} ref={ref11}><OurAskComp /></div>
+        <div style={{ minWidth: "100%" }} ref={ref12}><ThankYouComp /></div> 
+
+      {/* ---------------------------------------- */}
 
     </div>
   );

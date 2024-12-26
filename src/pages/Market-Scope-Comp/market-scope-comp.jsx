@@ -14,15 +14,8 @@ import Polegon2 from 'assets/imgs/market-scope/Polygon2.png';
 import Polegon3 from 'assets/imgs/market-scope/Polygon3.png';
 import underLineVector from 'assets/imgs/market-scope/Vector80.png';
 
-// const Logo = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/ultraviolette-full-logo.png';
-// const bgImg = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/market-scope/market-scope-bg.png';
-// const Polegon1 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/market-scope/Polygon1.png';
-// const Polegon2 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/market-scope/Polygon2.png';
-// const Polegon3 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/market-scope/Polygon3.png';
-// const underLineVector = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/market-scope/Vector80.png';
 
 export default function MarketScopeComp() {
-    // const Frame1 = "https://rentblob.blob.core.windows.net/pitch/img/Pitch-Deck/seventh-comp-img/frame-451.png";
    
     const [progressBar, setProgressBar] = useState(true)
 

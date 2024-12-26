@@ -17,19 +17,6 @@ import Frame11 from 'assets/imgs/marketing-campaigns/Frame11.png';
 import Frame12 from 'assets/imgs/marketing-campaigns/Frame12.png';
 import BGFrame from 'assets/imgs/marketing-campaigns/Frame946.png';
 
-// const Logo = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/ultraviolette-full-logo.png';
-// const Frame1 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame1.png';
-// const Frame2 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame2.png';
-// const Frame3 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame3.png';
-// const Frame4 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame4.png';
-// const Frame5 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame5.png';
-// const Frame6 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame6.png';
-// const Frame7 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame7.png';
-// const Frame10 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame10.png';
-// const Frame11 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame11.png';
-// const Frame12 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame12.png';
-// const BGFrame = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/marketing-campaigns/Frame946.png';
-
 
 export default function MarketingComp(props) {
 

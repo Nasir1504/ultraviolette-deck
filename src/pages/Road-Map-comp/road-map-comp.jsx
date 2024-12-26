@@ -8,10 +8,6 @@ import Logo from 'assets/imgs/ultraviolette-full-logo.png';
 import BGImg from 'assets/imgs/road-map/Roadmap.png';
 import BikeImg from 'assets/imgs/road-map/frame-bike.png';
 import CircleStroke from 'assets/imgs/road-map/Frame955.png';
-// const Logo = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/ultraviolette-full-logo.png';
-// const BGImg = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/road-map/Roadmap.png';
-// const BikeImg = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/road-map/frame-bike.png';
-// const CircleStroke = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/road-map/Frame955.png';
 
 export default function RoadMapComp() {
 
