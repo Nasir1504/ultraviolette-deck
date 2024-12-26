@@ -95,7 +95,7 @@ export default function SolutionComp() {
                     poster={Poster}
                     autoPlay
                     muted
-                    disableremoteplayback="true"
+                    disableRemotePlayback= {true} 
                     preload="auto"
                     // loop
                     onTimeUpdate={handleTimeUpdate}

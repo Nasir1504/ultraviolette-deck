@@ -1,4 +1,4 @@
-import react, { useState, useRef, useEffect } from "react";
+import React, { useState, useRef, useEffect } from "react";
 
 //styles
 import './App.scss';
@@ -10,7 +10,7 @@ import { NAVIGATING_BAR_DATA } from "./pages/Nevigating-Bars/NevigatingBarData";
 import WelcomeComp from "./pages/Welcome-Comp/welcome-comp";
 import ProblemComp from "pages/Problem-Comp/problem-comp";
 import SolutionComp from "pages/Solution-Comp/solution-comp";
-// import USPComp from "pages/USP-Comp/usp-comp";
+import USPComp from "pages/USP-Comp/usp-comp";
 import AppFlowComp from "pages/App-Flow-Comp/app-flow-comp";
 import GTMComp from "pages/GTM-Comp/gtm-comp";
 import MarketScopeComp from "pages/Market-Scope-Comp/market-scope-comp";
@@ -191,7 +191,7 @@ function App() {
       <div style={{ minWidth: "100%" }} ref={ref1}><WelcomeComp /></div>
       <div style={{ minWidth: "100%" }} ref={ref2}><ProblemComp /></div>
         <div style={{ minWidth: "100%" }} ref={ref3}><SolutionComp /></div>
-        {/* <div style={{ minWidth: "100%" }} ref={ref4}><USPComp /></div> */}
+        <div style={{ minWidth: "100%" }} ref={ref4}><USPComp /></div>
 
         <div style={{ minWidth: "100%" }} ref={ref5}><AppFlowComp /></div>
         <div style={{ minWidth: "100%" }} ref={ref6}><GTMComp /></div>

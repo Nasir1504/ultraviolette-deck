@@ -13,13 +13,6 @@ import cardImg3 from 'assets/imgs/problem-comp/Group38281.png';
 import bgIMG from 'assets/imgs/problem-comp/Group121.png';
 import maskedImg from 'assets/imgs/problem-comp/usemask.png';
 
-// const logo = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/ultraviolette-full-logo.png';
-// const cardImg1 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/problem-comp/Group38280.png';
-// const cardImg2 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/problem-comp/Group38282.png';
-// const cardImg3 = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/problem-comp/Group38281.png';
-// const bgIMG = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/problem-comp/Group121.png';
-// const maskedImg = 'https://rentblob.blob.core.windows.net/template/ultraviolette/imgs/problem-comp/usemask.png';
-
 
 export default function ProblemComp() {
 
@@ -103,7 +96,7 @@ export default function ProblemComp() {
                 {
                     PROBLEM_COMP_DATA.map((item, i) => {
 
-                        const ImgURL = contentId === (i + 1) && item.imgURL
+                        const ImgURL = contentId === (i + 1) ? item.imgURL : undefined
                         // console.log(ImgURL)
 
                         return (
@@ -111,7 +104,7 @@ export default function ProblemComp() {
                                 className="content-img"
                                 key={i}
                                 src={ImgURL}
-                                alt="" i
+                                alt=""
                             />
                         )
                     })
