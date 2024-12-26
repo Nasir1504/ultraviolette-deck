@@ -1,0 +1,252 @@
+.market-scope-comp-main-container {
+    width: 100%;
+    // height: 850px;bg-img
+    height: 100vh;
+    box-sizing: border-box;
+    overflow: hidden;
+    // border: 1px solid black;
+    position: relative;
+    display: flex;
+    background-color: #000;
+    // margin-top: 5%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+
+    @keyframes paraDown-keyframe {
+        0% {
+            padding-bottom: 0%;
+        }
+
+        60% {
+            padding-bottom: -4%;
+        }
+
+        60% {
+            padding-bottom: 4%;
+        }
+
+        100% {
+            padding-bottom: 0%;
+        }
+    }
+
+    .hover-hidden-div {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        // background-color: #000;
+    }
+
+    .left-div {
+        width: 40%;
+        height: 100%;
+        // border: 1px solid black;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        box-sizing: border-box;
+        padding: 0 0 0 3%;
+        gap: 10%;
+
+        .top-div {
+            width: 100%;
+            height: 40%;
+            // background-color: aquamarine;
+            padding: 2vw 0;
+            display: flex;
+            gap: 10%;
+            flex-direction: column;
+            justify-content: space-between;
+
+            .logo-img {
+                width: 50%;
+            }
+
+            .main-heading {
+                font-size: clamp(1rem, 3.5vw, 3.5rem);
+                letter-spacing: clamp(0.2rem, 0.6vw, 0.6rem);
+                // opacity: 0.8;
+                font-weight: 600;
+                // color: #ff4d4d;
+                background: linear-gradient(#0092CE, 50%, #ffffff9a);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            .second-heading {
+                width: 100%;
+                height: 60%;
+                // background-color: #333;
+                display: flex;
+                flex-direction: column;
+                font-size: clamp(0.4rem, 2vw, 2rem);
+                letter-spacing: clamp(0.2rem, 0.2vw, 0.2rem);
+                color: #fff;
+
+                .part1 {
+                    font-weight: 300;
+                    line-height: 1;
+                    color: #fff;
+                    padding: 0 0.2em;
+
+
+                    span {
+                        font-size: clamp(0.4rem, 4vw, 4rem);
+                        color: #378FDF;
+                    }
+
+                    em {
+                        color: #378FDF;
+                        font-style: normal;
+                    }
+                }
+
+                .part2 {
+                    width: 100%;
+                    display: flex;
+                    justify-content: flex-start;
+                    align-items: center;
+                    // background-color: #888;
+                    position: relative;
+
+                    .span-left {
+                        // width: 30%;
+                        padding: 0 0.2em;
+                        height: 100%;
+                        // border-bottom: 0.15vw solid #1D476D;
+                        // border-right: 0.15vw solid #1D476D;
+                        // border-radius: 0 0 0.4vw 0;
+                    }
+
+                    .underline-img{
+                        position: absolute;
+                        width: 30vw;
+                        object-fit: contain;
+                    }
+
+                }
+
+            }
+        }
+
+        .bottom-div {
+            width: 100%;
+            height: 50%;
+            // background-color: bisque;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-evenly;
+        }
+
+        .blank-div {
+            width: 100%;
+            height: 10%;
+        }
+    }
+
+    .right-div {
+        width: 50%;
+        height: 100%;
+        // border: 1px solid #fff000;
+        display: flex;
+        position: relative;
+
+        .polygon-container {
+            position: absolute;
+            width: 45vw;
+            height: 30vw;
+            // border: 1px solid #fff;
+            bottom: 0%;
+            left: -10%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            // overflow: hidden;
+
+            .inner-section {
+                position: relative;
+                width: 100%;
+                height: 100%;
+
+                .polygon-img-div {
+                    position: absolute;
+                    width: 160%;
+                    height: 100%;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    left: -28%;
+                    transition: 0.8s ease-out;
+                    transform: translateY(100%);
+
+                    .polygon-img {
+                        position: relative;
+                        width: 100%;
+                        z-index: 0;
+                        object-fit: contain;
+                    }
+
+                    .circle-top {
+                        position: absolute;
+                        width: 36vw;
+                        height: 5vw;
+                        // border: 1px solid #fff;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        margin-left: 47%;
+                        margin-top: 0vh;
+                        opacity: 0;
+                        transition: 0.8s;
+                        transition-delay: 2.2s;
+
+                    }
+                }
+
+                .polygon-one-img-div {
+                    top: 10vw;
+
+                    .circle-top {
+                        top: -20%;
+
+                        .inner-circle-one {
+                            background-color: #0248D5;
+                        }
+                    }
+                }
+
+                .polygon-two-img-div {
+                    top: 11vw;
+                    transition-delay: 0.8s;
+
+                    .circle-top {
+                        top: -1%;
+
+                        .inner-circle-one {
+                            background-color: #249953;
+                        }
+                    }
+                }
+
+                .polygon-three-img-div {
+                    top: 13vw;
+                    transition-delay: 1.2s;
+
+                    .circle-top {
+                        top: 16%;
+
+                        .inner-circle-one {
+                            background-color: #DD6642;
+                        }
+                    }
+                }
+            }
+        }
+
+    }
+}

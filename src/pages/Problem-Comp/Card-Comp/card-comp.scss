@@ -1,0 +1,116 @@
+.problem-card-comp-main-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    align-items: center;
+    // background: #000fff;
+    // border: 1px solid #fff;
+    gap: 4%;
+
+    .top-section {
+        position: relative;
+        width: 90%;
+        height: 74%;
+        border-radius: 0.5vw;
+        background-color: #000;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 2.5px;
+
+        .color-gradient {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            z-index: 0;
+            overflow: hidden;
+            border-radius: 0.5vw;
+
+            @keyframes identifier1 {
+                100% {
+                    transform: rotate(-320deg);
+                }
+            }
+
+            @keyframes identifier2 {
+                100% {
+                    transform: rotate(320deg);
+                }
+            }
+
+            .gradient-div {
+                min-width: 180%;
+                min-height: 180%;
+                background: linear-gradient(129.71deg,
+                        rgba(112, 112, 112, 1) 10.9809478893876076%,
+                        rgba(0, 0, 0, 1) 70.8942312002182%,
+                        rgba(0, 0, 0, 0) 100%);
+                // animation: identifier 5s linear infinite alternate-reverse;
+            }
+
+
+        }
+
+        .inner-part {
+            position: relative;
+            width: 100%;
+            height: 100%;
+            background-color: #101010;
+            // background-color: #fff;
+            border-radius: 0.4vw;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-end;
+            align-items: center;
+            z-index: 1;
+            // border: 1px solid #fff;
+
+            .card-img {
+                position: absolute;
+                top: -30%;
+                width: 100%;
+                object-fit: contain;
+            }
+
+            .name {
+                color: #fff;
+                font-size: clamp(0.4rem, 1.05vw, 1.1rem);
+                letter-spacing: 0.05em;
+                text-transform: capitalize;
+                margin-bottom: 6%;
+            }
+
+
+        }
+
+    }
+
+    .view-detail-btn {
+        position: relative;
+        width: 76%;
+        height: 16%;
+        border-radius: 0.4vw;
+        background-color: #378FDF;
+        margin-bottom: 0.15vw;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: clamp(0.4rem, 1.2vw, 1.6rem);
+        letter-spacing: 0.05em;
+        cursor: pointer;
+        transition: 0.1s ease-out;
+        z-index: 1;
+
+        &:hover {
+            box-shadow: 0.1vw 0.1vw 2px #fff;
+
+        }
+    }
+}

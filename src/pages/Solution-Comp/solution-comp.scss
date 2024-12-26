@@ -1,0 +1,270 @@
+.solution-comp-main-container {
+    width: 100%;
+    // height: 850px;
+    height: 100vh;
+    padding-top: 2%;
+    // border: 1px solid black;
+    background-color: #f9f9f9;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    .hidden-layer {
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        // background-color: #00000059;
+        z-index: 1;
+    }
+
+    .bg-video-div {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: #fff000;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        z-index: 0;
+
+        .video-tag {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+
+    }
+
+    .bg-upper-layer {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        // background-color: #ffee002f;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .main-heading {
+            position: absolute;
+            width: 22vw;
+            height: 14vw;
+            // border: 1px solid #fff;
+            left: 2.5%;
+            top: 5%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            align-items: left;
+
+            .logo-div {
+                width: 16vw;
+                height: 3vw;
+                object-fit: contain;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: contain;
+                color: #fff;
+                text-transform: uppercase;
+                display: flex;
+                justify-content: flex-start;
+                align-items: center;
+                gap: 5%;
+
+                .logo-img {
+                    width: 20%;
+                    object-fit: contain;
+                }
+
+                p {
+                    font-size: clamp(0.5rem, 2vw, 2rem);
+                    letter-spacing: 0.1em;
+                }
+            }
+
+            .heading {
+                font-size: clamp(0.5rem, 4vw, 4rem);
+                letter-spacing: 0.1em;
+                background: linear-gradient(#0092CE, 50%, #4e4d4d4f);
+                background-clip: text;
+                -webkit-background-clip: text;
+                color: transparent;
+            }
+
+            .text-content {
+                font-size: clamp(0.4rem, 2vw, 2rem);
+                letter-spacing: 0.1em;
+                color: #fff;
+            }
+        }
+
+        .left-content {
+            position: absolute;
+            top: 15%;
+            right: 2%;
+            color: #fff;
+            font-size: clamp(0.4rem, 2vw, 2rem);
+            text-align: right;
+            transform: translateX(50vw);
+            transition: 0.6s ease-in-out;
+
+            em {
+                color: #3CC5FF;
+            }
+        }
+
+        @keyframes blinkKF {
+            0% {
+                opacity: 1;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+
+        .ring-div {
+            position: absolute;
+            width: 5.4vw;
+            height: 5.4vw;
+            // border: 1px solid #fff;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+            opacity: 0;
+            transition: 0.5s ease-in-out;
+            z-index: 2;
+            // animation: 0.7s blinkKF ease-in-out infinite;
+        }
+
+        .high-speed-ring {
+            margin-top: 28.4vw;
+            margin-left: -39.2vw;
+            // transition-delay: 0.5s;
+            // border: 1px solid #fff;
+            cursor: pointer;
+
+        }
+
+        .cutting-edge-ring {
+            margin-top: 16.4vw;
+            margin-left: 12.4vw;
+            // transition-delay: 1.5s;
+            // border: 1px solid #fff;
+            cursor: pointer;
+
+        }
+
+        .eco-friendly-ring {
+            margin-top: -13vw;
+            margin-left: 43vw;
+            // transition-delay: 2.5s;
+            // border: 1px solid #fff;
+            cursor: pointer;
+
+        }
+
+        @keyframes tapIconKF {
+            0% {
+                padding-bottom: 0%;
+            }
+            60% {
+                padding-bottom: 10%;
+            }
+            100% {
+                padding-bottom: 0%;
+            }
+        }
+
+        .back-btn-style {
+            position: absolute;
+            width: 3vw;
+            height: 3vw;
+            color: #fff;
+            font-size: clamp(0.4rem, 1vw, 1rem);
+            letter-spacing: 0.05em;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            border-radius: 50%;
+            border: 1px solid rgba(255, 122, 0, 1);
+            cursor: pointer;
+            z-index: 1;
+
+            .tap-icon {
+                position: absolute;
+                font-size: clamp(0.4rem, 2vw, 2rem);
+                color: #fff;
+                animation: 0.4s tapIconKF infinite;
+            }
+        }
+
+        .high-speed-card-container {
+            position: absolute;
+            width: 24vw;
+            height: 14vw;
+            margin-left: -60vw;
+            margin-top: 8vh;
+            // border: 1px solid #fff;
+            opacity: 0;
+            transition: 0.2s ease-in-out;
+
+            .back-btn {
+                @extend .back-btn-style;
+                right: 105%;
+                top: 65%;
+
+                .tap-icon {
+                    top: 80%;
+                }
+            }
+        }
+
+        .cutting-edge-card-container {
+            position: absolute;
+            width: 24vw;
+            height: 14vw;
+            margin-left: 0vw;
+            margin-top: 28vh;
+            // border: 1px solid #fff;
+            opacity: 0;
+            transition: 0.2s ease-in-out;
+
+            .back-btn {
+                @extend .back-btn-style;
+                left: 100%;
+                top: 40%;
+
+                .tap-icon {
+                    top: 80%;
+                }
+            }
+        }
+
+        .eco-friendly-card-container {
+            position: absolute;
+            width: 24vw;
+            height: 14vw;
+            margin-left: 10vw;
+            margin-top: -6vh;
+            // border: 1px solid #fff;
+            opacity: 0;
+            transition: 0.2s ease-in-out;
+
+            .back-btn {
+                @extend .back-btn-style;
+                left: 100%;
+                top: -40%;
+
+                .tap-icon {
+                    top: 80%;
+                }
+            }
+        }
+
+    }
+}

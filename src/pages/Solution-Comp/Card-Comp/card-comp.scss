@@ -1,0 +1,158 @@
+.card-comp-main-container {
+    position: relative;
+    width: 20vw;
+    height: 14vw;
+    // border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .top-most-part {
+        position: absolute;
+        bottom: 106%;
+        width: 100%;
+        height: 50%;
+        background: linear-gradient(180deg,
+                rgba(255, 122, 0, 1) 0.9809478893876076%,
+                rgba(0, 0, 0, 0) 60.8942312002182%,
+                rgba(0, 0, 0, 0) 100%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.14vw;
+        border-radius: 1vw;
+
+        .inner-part {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            border-radius: 0.9vw;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+
+        }
+
+    }
+
+    .heading1 {
+        width: 100%;
+        height: 16.5%;
+        background-position: right;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: clamp(0.4rem, 2vw, 2.2rem);
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #fff;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        padding-left: 2%;
+
+        .hr-line {
+            position: absolute;
+            left: 44%;
+            margin-top: 37%;
+            width: 65%;
+            height: 32%;
+            border-top: 0.2vw solid #fff;
+            border-right: 0.25vw solid #fff;
+            transform: skew(38deg, 0deg);
+        }
+    }
+
+    .heading2 {
+        width: 100%;
+        height: 16.5%;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: clamp(0.4rem, 2vw, 2.2rem);
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #fff;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        padding-left: 2%;
+
+        .hr-line {
+            position: absolute;
+            left: -74%;
+            margin-top: 8%;
+            width: 85%;
+            height: 12%;
+            border-bottom: 0.2vw solid #fff;
+            border-left: 0.45vw solid #fff;
+            transform: skew(68deg, 0deg);
+        }
+    }
+
+    .heading3 {
+        width: 100%;
+        height: 16.5%;
+        background-position: left;
+        background-repeat: no-repeat;
+        background-size: contain;
+        font-size: clamp(0.4rem, 2vw, 2.2rem);
+        letter-spacing: 0.05em;
+        text-align: left;
+        color: #fff;
+        display: flex;
+        // justify-content: center;
+        align-items: center;
+        text-transform: capitalize;
+        padding-left: 2%;
+
+        .hr-line {
+            position: absolute;
+            left: -74%;
+            margin-top: 8%;
+            width: 85%;
+            height: 12%;
+            border-bottom: 0.2vw solid #fff;
+            border-left: 0.45vw solid #fff;
+            transform: skew(68deg, 0deg);
+        }
+    }
+
+    .content-div {
+        width: 100%;
+        height: 75%;
+        // border: 1px solid #fff;
+        background: linear-gradient(185deg,
+                rgba(255, 122, 0, 1) 10.9809478893876076%,
+                rgba(0, 0, 0, 0) 50.8942312002182%,
+                rgba(0, 0, 0, 0) 100%);
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 0.14vw;
+        border-radius: 0.4vw;
+
+        .inner-content-div {
+            width: 100%;
+            height: 100%;
+            background-color: #000;
+            border-radius: 0.3vw;
+            color: #fff;
+            font-size: clamp(0.4rem, 1.5vw, 1.6rem);
+            letter-spacing: 0.1vw;
+            display: flex;
+            justify-content: center;
+            // align-items: center;
+            padding: 1em 0.4em;
+
+        }
+
+    }
+}

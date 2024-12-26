@@ -1,0 +1,60 @@
+.ask-card-main-container {
+    min-width: 16vw;
+    height: 16vw;
+    // border: 1px solid #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 2%;
+    padding: 2%;
+    opacity: 0;
+    transition: 0.4s;
+
+    .top-hr-bar {
+        position: absolute;
+        top: 10%;
+        width: 95%;
+        height: 0.4vw;
+        border-radius: 50px;
+        background-color: #222222;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+        .progress {
+            width: 50%;
+            height: 100%;
+            border-radius: 50px;
+            background-color: #FF5151;
+            transition: 0.8s ease-in-out;
+            filter: blur(0.1px);
+        }
+    }
+
+    .percentage-div {
+        color: #fff;
+        letter-spacing: 0.08em;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        opacity: 0;
+
+        .unit-span {
+            // position: absolute;
+        }
+    }
+
+    .name-text {
+        color: #fff;
+        font-size: clamp(0.5rem, 1.8vw, 1.8rem);
+        letter-spacing: 0.1em;
+    }
+
+    .detail-text {
+        color: #848484;
+        font-size: clamp(0.4rem, 1.4vw, 1.4rem);
+        letter-spacing: 0.1em;
+    }
+}
