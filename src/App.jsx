@@ -134,8 +134,7 @@ function App() {
       </div>
 
       {/* ---------------------------------------- */}
-      <div
-        className="App-main-top-nav"
+      <div className="App-main-top-nav"
         onMouseEnter={handleNavbarVisibilityTrue}
       >
         <NavigatingBar
